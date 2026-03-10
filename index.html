@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhyel Alvin De Jesus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Nhyel Alvin <span> De Jesus</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      
+        <a href="assets/Nhyel_Alvin_De_Jesus_CV.pdf" download="Nhyel_Alvin_De_Jesus_CV.pdf" class="cv-btn primary-btn purple-btn">
+    <i class="fas fa-download"></i> Download CV
+</a>
+
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <span class="badge">Available for Work</span>
+            <h1 class="typed-container">I'm a <span id="typed">Web Developer</span></h1>
+            <p>Bridging the gap between administrative efficiency and creative web solutions.</p>
+
+           <div class="hero-btns">
+    <a href="#contact" class="primary-btn blue-btn">
+        <i class="fas fa-paper-plane"></i> Hire Me
+    </a>
+    <a href="#portfolio" class="secondary-btn outline-btn">
+        View Work <i class="fas fa-arrow-right"></i>
+    </a>
+</div>
+
+        </div>
+
+        <div class="hero-img">
+            <div class="circle-bg">
+                <img src="assets/round-photo.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-container">
+            <div class="intro-card">
+                <h3>My introduction</h3>
+                <p>
+                    I am an aspiring tech professional seeking growth in IT careers. 
+                    I envision expanding my knowledge to bring automation and efficiency to businesses. 
+                    I specialize in building systems that help startups grow through technology, and I am readily available 
+                    to partner with you to build your digital presence.
+                </p>
+                <a href="assets/Nhyel_Alvin_De_Jesus_CV.pdf" download="Nhyel_Alvin_De_Jesus_CV.pdf" class="primary-btn purple-btn">
+    <i class="fas fa-file-pdf"></i> Download CV
+</a>
+            </div>
+            <div class="skills-groups">
+                <div class="skill-group">
+                    <h4>Frontend Development</h4>
+                    <div class="skill-tags">
+                        <span class="tag-purple">HTML5</span>
+                        <span class="tag-purple">CSS3</span>
+                        <span class="tag-purple">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Systems & Automation</h4>
+                    <div class="skill-tags">
+                        <span class="tag-purple">Workflow Ops</span>
+                        <span class="tag-purple">System Building</span>
+                        <span class="tag-purple">Efficiency</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="section-title">
+            <h2>My Expertise</h2>
+            <p>Combining technical development with design and operational efficiency.</p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="icon"><i class="fas fa-code"></i></div>
+                <h3>Development</h3>
+                <div class="tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3 / Flexbox</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Git & GitHub</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="icon"><i class="fas fa-pen-nib"></i></div>
+                <h3>Visual Design</h3>
+                <div class="tags">
+                    <span class="tag">Brand Identity</span>
+                    <span class="tag">Asset Creation</span>
+                    <span class="tag">UI Layouts</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="icon"><i class="fas fa-cogs"></i></div>
+                <h3>Operations</h3>
+                <div class="tags">
+                    <span class="tag">Workflow Automation</span>
+                    <span class="tag">Data Management</span>
+                    <span class="tag">Documentation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="portfolio" class="portfolio-section">
+    <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p>A showcase of systems and websites built for startups and efficiency.</p>
+    </div>
+
+    <div class="portfolio-grid">
+        <a href="https://gwyneth-portfolio-khaki.vercel.app/" target="_blank" class="project-card-link">
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="assets/portfolioclient.png" alt="Accounting Portfolio Preview">
+                    <div class="overlay">
+                        <i class="fas fa-external-link-alt"></i> Visit Website
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3> Website Portfolio for Accounting Client</h3>
+                    <span class="tag">Website</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<div id="portfolioModal" class="modal">
+    <span class="close-modal" onclick="closeCarousel()">&times;</span>
+    <div class="modal-content">
+        <div class="carousel-container">
+            <div class="slide fade">
+                <img id="carousel-img" src="" style="width:100%">
+                <video id="carousel-video" controls style="width:100%; display:none;"></video>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+    </div>
+</div>
+
+    <section id="contact" class="contact-section">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p>Ready to partner with startups to build systems and grow businesses through technology.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Me</h4>
+                        <p>nhyelalvindejesus@email.com</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Bulacan, Philippines</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Availability</h4>
+                        <p>Open for Part-Time and Partnership</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="https://formspree.io/f/mgonawkv" method="POST" class="contact-form">
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+        <input type="text" name="subject" placeholder="Project or Startup Goals" required>
+    </div>
+    <div class="form-group">
+        <textarea name="message" placeholder="Tell me more details..." rows="5" required></textarea>
+    </div>
+    <button type="submit" class="primary-btn blue-btn">
+        Send Message <i class="fas fa-paper-plane"></i>
+    </button>
+</form>
+        </div>
+    </section>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
