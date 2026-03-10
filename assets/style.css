@@ -348,6 +348,37 @@ body {
     border: 1px solid #e2e8f0;
 }
 
+/* Project Info Layout Fix */
+.project-info{
+    padding:20px 22px 24px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.project-info h3{
+    font-size:1.1rem;
+    font-weight:700;
+    line-height:1.4;
+    color:var(--dark-text);
+}
+
+.project-info .tag{
+    width:fit-content;
+    margin-top:5px;
+}
+
+.project-card{
+    border-radius:18px;
+    overflow:hidden;
+    transition:all .35s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
 .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
 .project-img-wrapper { position: relative; height: 200px; }
