@@ -461,3 +461,376 @@ body {
         order: -1; /* Move image to top on mobile */
     }
 }
+
+/* =========================================
+   GLOBAL RESPONSIVE IMPROVEMENTS
+========================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    width: 100%;
+}
+
+/* =========================================
+   LARGE TABLETS / SMALL LAPTOPS
+========================================= */
+
+@media (max-width: 1200px){
+
+.hero{
+    padding: 70px 6%;
+}
+
+.typed-container{
+    font-size: 3rem;
+}
+
+#typed{
+    min-width: auto;
+}
+
+.hero-img .circle-bg{
+    width: 320px;
+    height: 320px;
+}
+
+}
+
+/* =========================================
+   TABLET VIEW
+========================================= */
+
+@media (max-width: 992px){
+
+.navbar{
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links{
+    width: 100%;
+    justify-content: center;
+}
+
+.hero{
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+}
+
+.hero-text{
+    max-width: 100%;
+}
+
+.hero-btns{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-img .circle-bg{
+    width: 300px;
+    height: 300px;
+}
+
+.about-container{
+    flex-direction: column;
+}
+
+.skills-groups{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-container{
+    flex-direction: column;
+}
+
+.contact-form{
+    width: 100%;
+}
+
+.contact-info{
+    width: 100%;
+}
+
+}
+
+/* =========================================
+   MOBILE DEVICES
+========================================= */
+
+@media (max-width: 768px){
+
+.navbar{
+    padding: 15px 5%;
+}
+
+.logo{
+    font-size: 20px;
+}
+
+.nav-links{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero{
+    padding: 60px 5%;
+}
+
+.typed-container{
+    font-size: 2.4rem;
+}
+
+.hero-text p{
+    font-size: 1rem;
+}
+
+.hero-btns{
+    flex-direction: column;
+    align-items: center;
+}
+
+.primary-btn,
+.secondary-btn,
+.cv-btn{
+    width: 100%;
+    justify-content: center;
+}
+
+.hero-img .circle-bg{
+    width: 250px;
+    height: 250px;
+}
+
+.about-section,
+.skills-section,
+.portfolio-section,
+.contact-section{
+    padding: 70px 5%;
+}
+
+.intro-card{
+    padding: 30px;
+}
+
+.skill-card{
+    padding: 2rem 1.5rem;
+}
+
+.portfolio-grid{
+    grid-template-columns: 1fr;
+}
+
+.project-img-wrapper{
+    height: 180px;
+}
+
+.contact-form{
+    padding: 30px;
+}
+
+}
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px){
+
+.hero{
+    padding: 50px 20px;
+}
+
+.typed-container{
+    font-size: 2rem;
+}
+
+.hero-text p{
+    font-size: 0.95rem;
+}
+
+.hero-img .circle-bg{
+    width: 200px;
+    height: 200px;
+}
+
+.badge{
+    font-size: 0.7rem;
+}
+
+.section-title h2{
+    font-size: 1.8rem;
+}
+
+.contact-card{
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-card i{
+    margin-bottom: 10px;
+}
+
+.modal-content{
+    width: 95%;
+}
+
+}
+
+/* =========================================
+   EXTRA LARGE SCREENS
+========================================= */
+
+@media (min-width: 1600px){
+
+.hero{
+    padding: 120px 10%;
+}
+
+.about-section,
+.contact-section,
+.portfolio-section{
+    padding: 120px 10%;
+}
+
+}
+
+/* =============================
+   MOBILE MENU
+============================= */
+
+.menu-toggle{
+display:none;
+font-size:22px;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:white;
+flex-direction:column;
+align-items:center;
+padding:20px 0;
+display:none;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+.nav-links.active{
+display:flex;
+}
+
+}
+
+/* =============================
+   LOADER
+============================= */
+
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background:white;
+z-index:9999;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.loader-spinner{
+width:50px;
+height:50px;
+border:5px solid #e2e8f0;
+border-top:5px solid var(--primary-blue);
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+100%{transform:rotate(360deg);}
+}
+
+/* =============================
+   BACK TO TOP
+============================= */
+
+#backToTop{
+position:fixed;
+bottom:30px;
+right:30px;
+background:var(--primary-blue);
+color:white;
+border:none;
+width:45px;
+height:45px;
+border-radius:50%;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+opacity:0;
+pointer-events:none;
+transition:0.3s;
+z-index:1000;
+}
+
+#backToTop.show{
+opacity:1;
+pointer-events:auto;
+}
+
+/* =============================
+   FOOTER
+============================= */
+
+.footer{
+text-align:center;
+padding:25px;
+background:white;
+border-top:1px solid #e2e8f0;
+font-size:14px;
+color:var(--light-text);
+}
+
+/* =============================
+   SCROLL PROGRESS
+============================= */
+
+#scroll-progress{
+position:fixed;
+top:0;
+left:0;
+height:3px;
+background:var(--primary-blue);
+width:0%;
+z-index:2000;
+}
+
+/* =============================
+   SCROLL ANIMATION
+============================= */
+
+.hidden{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.7s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
